@@ -6,8 +6,8 @@ b.get_api()
 light_names = b.get_light_objects('name')
 
 
-def modify_lights(arguments):
-	brightness = int(arguments.pop(1))
+def modify_lights(command):
+	brightness = int(command.arguments.pop(1))
 
 	if brightness < 0:
 		brightness = 0

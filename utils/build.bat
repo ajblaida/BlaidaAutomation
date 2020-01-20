@@ -1,1 +1,1 @@
-pyinstaller home.spec --noconfirm
+pyinstaller --noconfirm  -n home -D ../main.py

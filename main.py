@@ -1,4 +1,6 @@
-from ingest.ingest import ingest
+from lifecycle.ingest.ingest import ingest
+from models.command import Command
+import sys
 
-userin = input("value\n")
-ingest(userin.split())
+command = Command(sys.argv[1:])
+ingest(command)
