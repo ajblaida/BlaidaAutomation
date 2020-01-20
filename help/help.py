@@ -1,3 +1,4 @@
 def help(arguments):
-	print("I would show help for" + arguments[0])
+	zone = arguments.pop(1)
+	print("I would show help for " + zone)
 	return 0

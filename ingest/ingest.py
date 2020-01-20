@@ -11,5 +11,5 @@ def ingest(arguments):
 
 options = {
 	"lights": modify_lights,
-	"help": help,
+	"help": help
 }

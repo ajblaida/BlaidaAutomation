@@ -1,0 +1,1 @@
+pyinstaller home.spec --noconfirm
