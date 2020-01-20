@@ -7,7 +7,8 @@ light_names = b.get_light_objects('name')
 
 
 def modify_lights(arguments):
-	brightness = int(userin)
+	brightness = int(arguments.pop(1))
+
 	if brightness < 0:
 		brightness = 0
 	elif brightness > 254:
@@ -18,5 +19,4 @@ def modify_lights(arguments):
 	b.set_group('Living Room', 'on', isOn)
 	if isOn:
 		b.set_group('Living Room', 'bri', brightness)
-	userin = input("value")
-	print("modifying lights with", arguments)
+	return 0
